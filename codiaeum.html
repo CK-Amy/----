@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>洒金水厂数据总览</title>
+    <link rel="stylesheet" href="css/codiaeum.css">
+</head>
+
+<body>
+    <div id="main">
+        <!--液位/水质-->
+        <div id="main_1" class="sonBg rf">
+            <h5>液位/水质</h5>
+
+            <div class="rf fsize">
+                <p class="pbg p2 rf">
+                    <a>PH值</a>
+                    <span class="rf">7.9</span>
+                </p>
+                <p class="pbg p1">
+                    <a>浊度</a>
+                    <span class="rf">0.03</span>
+                </p>
+                <p class="pbg p4 rf">
+                    <a>余氯</a>
+                    <span class="rf">3.2</span>
+                </p>
+                <p class="pbg p3">
+                    <a>TOC</a>
+                    <span class="rf">3.2</span>
+                </p>
+
+            </div>
+            <div id="chart_barrel" style="width:40%; height:220%"></div>
+        </div>
+
+
+        <!--年度供水量-->
+        <div id="main_2" class="sonBg lf">
+            <h5>年度供水量</h5>
+            <div id="chart_month" style="width:78%;height:220%" class="rf"></div>
+
+            <ul id="chart_year">
+                <li>
+                    <button class="gradient">2015年</button>
+                </li>
+                <li>
+                    <button>2016年</button>
+                </li>
+                <li>
+                    <button>2017年</button>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!--测量统计-->
+        <div id="main_3" class="sonBg rf">
+            <h5>测量统计</h5>
+            <p class="pdate">2015-10-30</p>
+            <div id="chart_measure" style="width:100%;height:200px"></div>
+        </div>
+
+
+
+        <!--压力统计-->
+        <div id="main_4" class="sonBg lf">
+            <h5>压力统计</h5>
+            <p class="pdate">2015-10-30</p>
+            <div id="chart_pressure" style="width:100%;height:200px"></div>
+        </div>
+
+
+
+        <!--报警记录-->
+        <div id="main_5" class="sonBg rf">
+
+            <h5 class="fiveh5">报警记录</h5>
+            <table id="tbl" cellspacing="0" cellpadding="5">
+                <thead>
+                <tr>
+                    <th>设备</th>
+                    <th>原因</th>
+                    <th>时间</th>
+                    <th>状态</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>泵-234</td>
+                    <td>压力过低</td>
+                    <td>10-4 22:09:03</td>
+                    <td>停止</td>
+                </tr>
+                <tr>
+                    <td>泵-234</td>
+                    <td>压力过低</td>
+                    <td>10-4 22:09:03</td>
+                    <td>停止</td>
+                </tr>
+                <tr>
+                    <td>泵-234</td>
+                    <td>压力过低</td>
+                    <td>10-4 22:09:03</td>
+                    <td>停止</td>
+                </tr>
+                <tr>
+                    <td>泵-234</td>
+                    <td>压力过低</td>
+                    <td>10-4 22:09:03</td>
+                    <td>停止</td>
+                </tr>
+                <tr>
+                    <td>泵-234</td>
+                    <td>压力过低</td>
+                    <td>10-4 22:09:03</td>
+                    <td>停止</td>
+                </tr>
+                <tr>
+                    <td>泵-234</td>
+                    <td>压力过低</td>
+                    <td>10-4 22:09:03</td>
+                    <td>停止</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!--供水总量与耗电量统计-->
+        <div id="main_6" class="sonBg lf">
+            <h5 class="h5">供水总量与耗电量统计</h5>
+            <p>
+                <button class="btnbg">七天</button>
+                <button>月</button>
+            </p>
+            <div id="chart_make_water" style="width:100%;height:200px"></div>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.0.3.js"></script>
+<script src="js/echarts.js"></script>
+    <script src="js/liquidFill.js"></script>
+<script src="js/codiaeum.js"></script>
+</body>
+</html>
+
+
